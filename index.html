@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"/>
+	</head>
+	<body>
+		<div class="new">
+			<div class="tab-cover">
+				<ul>
+					<li class="tab-btn">SignIN</li>
+					<li class="tab-btn">Login</li>
+					<li class="tab-btn">Slaider</li>
+				</ul>
+				<div class="tabs">
+					<div class="tab">
+						<form action="form.html" id="login-box1">
+							<div class="left">
+								<div class="pic">
+									<img src="Images/pic.jpg">
+								</div>
+								<h1>SignIN Here</h1>
+								<input type="text" name="name" placeholder="Name" / class="text">
+								<input type="text" name="email" placeholder="E-mail" / class="text">
+								<input type="password" name="password" placeholder="Password" / class="text">
+								<input type="submit" name="signup_submit" value="Sign me up" / class="btn">
+								
+							</div>
+						</form>
+					</div>
+					<div class="tab">
+						<form action="#" id="login-box2">
+							<div class="left">
+								<div class="pic">
+									<img src="Images/pic.jpg">
+								</div>
+								<h1>Registration Here</h1>
+								<div class="rg">
+									<input type="text" name="name" placeholder="Name" / class="text">
+									<input type="text" name="username" placeholder="Username" / class="text">
+								</div>
+								<input type="text" name="email" placeholder="E-mail" / class="text">
+								<input type="password" name="password" placeholder="Password" / class="text">
+								<input type="password" name="password2" placeholder="Retype password" /class="text">
+								<input type="text" name="name" placeholder="Country Name" / class="text">
+								<div class="birthd">
+									<label class="date">Birthday:</label>
+									<input type="number" name="day" size="2"
+									maxlength="2" placeholder="Day" min="01" max="31"  class="birthdys"/>
+									<label for="day" class="birthdy">/</label>
+									<select name="month" class="birthdy">
+										<option value="month">Month</option>
+										<option value="Jan">Jan</option>
+										<option value="Feb">Feb</option>
+										<option value="Mar">Mar</option>
+										<option value="Apr">Apr</option>
+										<option value="May">May</option>
+										<option value="June">June</option>
+										<option value="July">July</option>
+										<option value="Aug">Aug</option>
+										<option value="Sep">Sep</option>
+										<option value="Oct">Oct</option>
+										<option value="Nov">Nov</option>
+										<option value="Dec">Dec</option>
+									</select>
+									<label for="month" class="birthdy">/</label>
+									<input type="text" name="year" size="5" maxlength="4" placeholder="Year"  min="1970" max="2023" class="birthdy"/>
+								</div>
+								<div class="birthd">
+									<label class="date">Gender:</label>
+									<input id="male" type="radio" name="gender" value="m">
+									<label for="male" class="birthdy">Male</label>
+									<input id="female" type="radio" name="gender" value="f">
+									<label for="female" class="birthdy">Female</label>
+									<input id="other" type="radio" name="gender" value="m">
+									<label for="other" class="birthdy">Other</label>
+								</div>
+								<input type="submit" name="signup_submit" value="Sign me up" / class="btn">
+							</div>
+						</form>
+					</div>
+					<div class="tab">
+						<div class="slider-wraper">
+							<main>
+								<img src="Images/bg.jpg" class="slide" alt="">
+								<img src="Images/bg1.jpg" class="slide" alt="">
+								<img src="Images/bg2.jpg" class="slide" alt="">
+								<img src="Images/bg3.jpg" class="slide" alt="">
+							</main>	
+							<div class="nav">
+								<button onclick="goPrev()">
+									Prev
+								</button>
+								<button onclick="goNext()">
+									Next
+								</button>
+							</div>						
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="Js/script.js"></script>
+</body>
+</html>
